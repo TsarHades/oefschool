@@ -8,6 +8,8 @@ def vervang_tekst(zoekterm,woord,vervangterm):
             woord = woord[:i] + vervangterm + woord[i+len(zoekterm):]
     print(woord)
     return woord
+
+
 # testen:
 assert vervang_tekst("ee", "computationeel denken", "aa") == "computationaal denken"
 assert vervang_tekst("ten", "hottentottententententoonstelling","stuff") == "hotstufftotstuffstuffstuffstufftoonstelling"

@@ -4,13 +4,13 @@ def aantal_keren_voorkomen(lijst):
     print(lijst)
     x = 1
     check = []
-    for i in range(0,len(lijst)-1):
+    for i in range(0, len(lijst)-1):
         if lijst[i] == lijst[i+1]:
-            x+=1
+            x += 1
         else:
-            check.append((lijst[i],int(x)))
-            x=1
-    check.append((lijst[len(lijst)-1],int(x)))
+            check.append((lijst[i], int(x)))
+            x = 1
+    check.append((lijst[len(lijst)-1], int(x)))
     print(check)
     return check
 

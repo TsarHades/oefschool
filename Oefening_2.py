@@ -1,15 +1,18 @@
 # creëer hier de gevraagde functie(s) met implementatie:
-def aantal_keren_voorkomen(gezocht,woord):
+def aantal_keren_voorkomen(gezocht, woord):
     aantalwoord = 0
-    for aantal in range(0,len(woord)):
+    for aantal in range(0, len(woord)):
         if woord[aantal] == gezocht:
-            aantalwoord +=1
+            aantalwoord += 1
     return aantalwoord
-def heeft_hetzelfde_aantal(gezochte,woord1,woord2):
-    if aantal_keren_voorkomen(gezochte,woord1) == aantal_keren_voorkomen(gezochte,woord2):
+
+
+def heeft_hetzelfde_aantal(gezochte, woord1, woord2):
+    if aantal_keren_voorkomen(gezochte, woord1) == aantal_keren_voorkomen(gezochte, woord2):
         return True
     else:
         return False
+
 
 # testen:
 assert aantal_keren_voorkomen("t", "hottentottententententoonstelling") == 10

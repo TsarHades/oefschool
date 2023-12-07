@@ -1,6 +1,6 @@
 # creëer hier de gevraagde functie(s) met implementatie:
 
-def ggd(eerstegetal,tweedegetal):
+def ggd(eerstegetal, tweedegetal):
     while eerstegetal != tweedegetal:
         if eerstegetal < tweedegetal:
             if tweedegetal-eerstegetal > 0:
@@ -12,9 +12,10 @@ def ggd(eerstegetal,tweedegetal):
                 eerstegetal -= tweedegetal
             else:
                 break
-    for x in range(1,eerstegetal):
+    for x in range(1, eerstegetal):
         if eerstegetal/x == tweedegetal:
             return eerstegetal/x
+
 
 # testen:
 assert ggd(12, 18) == 6

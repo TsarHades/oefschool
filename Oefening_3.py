@@ -17,6 +17,7 @@ def verwerk_commando(commando):
         getal2 = float(commando.split(" ")[2])
         return getal1/getal2
 
+
 # testen:
 assert verwerk_commando("optellen 5.7 6.3") == 12.0
 assert verwerk_commando("optellen -5 10") == 5
