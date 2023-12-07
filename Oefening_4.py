@@ -1,20 +1,15 @@
 # creëer hier de gevraagde functie(s) met implementatie:
+
 def vervang_tekst(zoekterm,woord,vervangterm):
-    woordeind = woord
-    woordsplit2 = woord
-    while zoekterm in woordsplit2:
-        woordsplit = woordeind.split(zoekterm)[0]
-        print(woordsplit)
-        woordsplit2 = woordeind.split(woordsplit + zoekterm)[1]
-        print(woordsplit2)
-        woordeind = woordsplit + vervangterm + woordsplit2
-        print(woordeind)
-    return woordeind
-
-
+    for i in range(0,len(woord)):
+        if zoekterm in woord[i:i+len(zoekterm)]:
+            print(zoekterm[i:len(zoekterm)])
+            print(woord)
+            woord = woord[:i] + vervangterm + woord[i+len(zoekterm):]
+    print(woord)
+    return woord
 # testen:
 assert vervang_tekst("ee", "computationeel denken", "aa") == "computationaal denken"
-assert vervang_tekst("ten", "hottentottententententoonstelling",
-                     "stuff") == "hotstufftotstuffstuffstuffstufftoonstelling"
+assert vervang_tekst("ten", "hottentottententententoonstelling","stuff") == "hotstufftotstuffstuffstuffstufftoonstelling"
 assert vervang_tekst("e", "ee", "ee") == "eeee"
-assert vervang_tekst("e", "eee", "eee") == "eeeeeeeee"
+assert vervang_tekst("e","eee", "eee") == "eeeeeeeee"
