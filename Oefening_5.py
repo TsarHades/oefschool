@@ -3,7 +3,7 @@ def is_gesorteerd(lijst):
     if len(lijst) == 0 or len(lijst) == 1:
         return True
     else:
-        for i in range(0 ,len(lijst)-1):
+        for i in range(0, len(lijst)-1):
             print(lijst[i])
             print(lijst[i+1])
             if lijst[i] <= lijst[i+1]:
