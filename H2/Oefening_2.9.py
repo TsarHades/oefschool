@@ -1,4 +1,10 @@
 # creëer hier de gevraagde functie(s) met implementatie:
+def aantal_keren_voorkomen(gezocht_getal,zoeklijst):
+    counter = 0
+    for i in range(0,len(zoeklijst)):
+        if zoeklijst[i] == gezocht_getal:
+            counter+=1
+    return counter
 
 
 # testen:
