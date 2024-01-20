@@ -29,4 +29,3 @@ x = numpy.power(xtemp, 3)
 y = 13*(numpy.cos(interval))-5*(numpy.cos(2*interval)) - 2*numpy.cos(3*interval) - numpy.cos(4*interval)
 plt.plot(x,y)
 plt.show()
-
